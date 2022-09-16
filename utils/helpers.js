@@ -3,8 +3,6 @@ function formatDate(date) {
         date
       ).getFullYear()}`;
 }
-
-
 module.exports = {
     formatDate
 }
