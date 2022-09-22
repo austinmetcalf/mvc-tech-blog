@@ -33,6 +33,8 @@ router.get('/', (req, res) => {
             const posts = dbPostData.map(post => post.get({
                 plain: true
             }));
+            
+// console.log(posts)
 
             res.render('homepage', {
                 posts,

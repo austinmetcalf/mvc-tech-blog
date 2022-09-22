@@ -37,6 +37,8 @@ router.get('/', withAuth, (req, res) => {
             const posts = dbPostData.map(post => post.get({
                 plain: true
             }));
+            console.log('hello')
+            console.log(dbPostData)
             res.render('dashboard', {
                 posts,
                 loggedIn: true
