@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// find where declared but not used
 const {
     User,
     Post,
@@ -6,7 +7,7 @@ const {
 } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-
+// find comments
 router.get("/", (req, res) => {
     Comment.findAll()
         .then((dbCommentData) => res.json(dbCommentData))

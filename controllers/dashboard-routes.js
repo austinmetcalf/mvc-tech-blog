@@ -7,7 +7,7 @@ const {
 } = require('../models');
 const withAuth = require('../utils/auth');
 
-
+// post find all
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
             where: {
