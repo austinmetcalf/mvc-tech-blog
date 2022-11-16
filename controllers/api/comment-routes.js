@@ -1,10 +1,9 @@
 const router = require('express').Router();
 // find where declared but not used
 const {
-    User,
-    Post,
+    
     Comment
-} = require('../../models');
+} = require('../../models/');
 const withAuth = require('../../utils/auth');
 
 // find comments
